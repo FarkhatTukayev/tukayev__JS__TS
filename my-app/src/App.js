@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 function App() {
-  const [inputText, setInputText] = useState(''); // Состояние для хранения текста из поля ввода
-  const [displayText, setDisplayText] = useState(''); // Состояние для отображаемого текста
-
-  // Функция, которая обновляет displayText при нажатии на кнопку
+  const [inputText, setInputText] = useState(''); 
+  const [displayText, setDisplayText] = useState(''); 
   const handleButtonClick = () => {
-    setDisplayText(inputText); // Обновляем метку текстом из поля ввода
+    setDisplayText(inputText); 
   };
 
   return (
@@ -17,7 +15,7 @@ function App() {
       <input
         type="text"
         value={inputText}
-        onChange={(e) => setInputText(e.target.value)} // Обновляем inputText при изменении
+        onChange={(e) => setInputText(e.target.value)} 
         placeholder="Введите текст"
         style={{ padding: '10px', fontSize: '16px' }}
       />
